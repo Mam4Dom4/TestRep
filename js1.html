@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arra = ["Россия", "Мурманск","Оленегорск"]
+        document.write(arra.reverse()+"<br>") // вывод массива в обратном порядке
+        
+        i=0
+        arra2=[] // ввод массива
+        while(i<3){
+            arra2[i]=prompt("Массив")
+            i+=1
+        }
+        document.write(arra2.join("+")+"<br>")// разделяя знаком +
+        const all = arra.concat(arra2) // объединение массовов
+        document.write(all+"<br>") // вывод объединенных массивов
+        document.write(all.push("e")+"<br>") // добавление элемента и ввывод длинны массива
+        all.pop() // удаление элемента
+        all.pop()
+        document.write(all+"<br>")
+        document.write(all.indexOf(prompt("введите элемент который хотите посмотреть в массиве"))) // выведение значения, указанного элемента
+    </script>
+</body>
+</html>
